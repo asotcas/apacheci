@@ -1,0 +1,5 @@
+FROM httpd:latest
+LABEL author="asotcas"
+LABEL version="1.0.0"
+WORKDIR C:\Users\DAW-A\Desktop\apacheic\htdocs
+COPY --chown=www-data:www-data htdocs/* .
